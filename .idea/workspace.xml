@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b52f23a8-7a58-4897-aebe-1354e6228025" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1XsGKMPjLLiq6vx2lKYFXkCs3Y8" />
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flitter-world" />
+      <recent name="$PROJECT_DIR$/session" />
+      <recent name="$PROJECT_DIR$/session/redis" />
+      <recent name="$PROJECT_DIR$/session/memory" />
+      <recent name="$PROJECT_DIR$/session/memory/memory_mgr" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/common/utils" />
+      <recent name="$PROJECT_DIR$/middleware/account" />
+      <recent name="$PROJECT_DIR$/views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build github.com/daniel/AnserBlock">
+    <configuration name="Unnamed" type="GoAppEngineRunConfiguration" factoryName="Go App Engine" nameIsGenerated="true">
+      <module name="AnserBlock" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <CONFIG value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/daniel/AnserBlock" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="AnserBlock" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/daniel/AnserBlock" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestInsertCategory in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AnserBlock" />
+      <working_directory value="$PROJECT_DIR$/dao/dal" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/daniel/AnserBlock/dao/dal" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestInsertCategory$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestLogin in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AnserBlock" />
+      <working_directory value="$PROJECT_DIR$/dao/dal" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/daniel/AnserBlock/dao/dal" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestLogin$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestReplace in github.com/daniel/AnserBlock/filter" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AnserBlock" />
+      <working_directory value="$PROJECT_DIR$/filter" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/daniel/AnserBlock/filter" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestReplace$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go App Engine.Unnamed" />
+      <item itemvalue="Go Build.go build github.com/daniel/AnserBlock" />
+      <item itemvalue="Go Test.TestLogin in github.com/daniel/AnserBlock/dao/dal" />
+      <item itemvalue="Go Test.TestReplace in github.com/daniel/AnserBlock/filter" />
+      <item itemvalue="Go Test.TestInsertCategory in github.com/daniel/AnserBlock/dao/dal" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/daniel/AnserBlock" />
+        <item itemvalue="Go Test.TestInsertCategory in github.com/daniel/AnserBlock/dao/dal" />
+        <item itemvalue="Go Test.TestReplace in github.com/daniel/AnserBlock/filter" />
+        <item itemvalue="Go Test.TestLogin in github.com/daniel/AnserBlock/dao/dal" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>goproxy.cn</proxy>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/controller/account/user.go</url>
+          <line>92</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
