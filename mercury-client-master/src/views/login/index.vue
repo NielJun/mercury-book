@@ -42,6 +42,9 @@ export default {
   methods: {
     async submit() {
         let res = await this.$http.post("/api/user/login", this.form);
+      console.log(res.statusCode);
+        console.log(res);
+
         if (res.status!=200){
             this.$Message.error("登陆失败 网络错误");
             return

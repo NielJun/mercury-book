@@ -8,6 +8,7 @@ import (
 	"github.com/daniel/AnserBlock/controller/ask"
 	"github.com/daniel/AnserBlock/controller/category"
 	"github.com/daniel/AnserBlock/dao"
+	"github.com/daniel/AnserBlock/filter"
 	"github.com/daniel/AnserBlock/generateid"
 	middleware "github.com/daniel/AnserBlock/middleware/account"
 	"github.com/gin-gonic/gin"
@@ -32,11 +33,13 @@ func initDataBase() (err error) {
 	return
 }
 
+// 初始化session
 func initSession() (err error) {
 	err = middleware.Init("memory", "localhost:6379")
 	return
 }
 
+//	 初始化logger日志系统
 func initLogger() (err error) {
 	config := make(map[string]string)
 	config["log_level"] = "debug"
@@ -44,12 +47,24 @@ func initLogger() (err error) {
 	return
 }
 
+// 初始化敏感词过滤模块
+func initFiltter() (err error) {
+
+	err = filter.Init("./filter/data/filter.dat.txt")
+	if err != nil {
+		logger.Debug("敏感词库文件加载失败 %#v", err)
+	}
+	return
+}
+
+//注册对外的API接口
 func RegisterAPI(router *gin.Engine) {
 
 	router.POST("/api/user/register", account.RegisterHandle)
 	router.POST("/api/user/login", account.LoginHandle)
 	router.GET("/api/category/list", category.CategoryListHandle)
-	router.POST("/api/ask/submit", ask.QuestionSubmitHandle)
+	// 问题发布页面  第一个参数是中间件的操作
+	router.POST("/api/ask/submit",middleware.AuthMiddleware, ask.QuestionSubmitHandle)
 }
 
 func main() {
@@ -68,6 +83,11 @@ func main() {
 	}
 
 	err = initLogger()
+	if err != nil {
+		panic(err)
+	}
+
+	err = initFiltter()
 	if err != nil {
 		panic(err)
 	}

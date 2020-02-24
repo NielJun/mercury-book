@@ -16,7 +16,20 @@ func LoginHandle(c *gin.Context) {
 	account.ProcessRequest(c)
 
 	var userInfo model.UserInfo
-	err := c.BindJSON(&userInfo)
+	var err error
+	defer func() {
+
+		if err != nil {
+			return
+		}
+
+		account.SetUserId(userInfo.UserId, c)
+		account.ProcessResponse(c)
+		// 成功 处理登录成功请求 并且设置user_id到session里面
+		utils.ResponseSuccess(c, nil)
+	}()
+
+	err = c.BindJSON(&userInfo)
 	if err != nil {
 		// 参数错误
 		utils.ResponseError(c, utils.ErrCodeParamter)
@@ -45,11 +58,6 @@ func LoginHandle(c *gin.Context) {
 		utils.ResponseError(c, utils.ErrCodeServerBusy)
 		return
 	}
-
-	account.SetUserId(userInfo.UserId, c)
-	account.ProcessResponse(c)
-	// 成功 处理登录成功请求 并且设置user_id到session里面
-	utils.ResponseSuccess(c, nil)
 
 }
 
@@ -80,7 +88,7 @@ func RegisterHandle(c *gin.Context) {
 		panic(err)
 		return
 	}
-	userInfo.UserId = userId
+	userInfo.UserId = int64(userId)
 
 	// dal操作数据库
 	err = dal.Register(&userInfo)

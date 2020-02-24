@@ -44,7 +44,7 @@ func Login(user * model.UserInfo)(err error)  {
 	// 1.	先保存传入过来的密码
 	postPwd := user.Password
 	// 2、 取出账号密码信息
-	sqlstr := "select username,password from user where username=?"
+	sqlstr := "select username,password,user_id from user where username=?"
 	err = dao.DB.Get(user, sqlstr, user.UserName)
 
 

@@ -10,6 +10,9 @@ const (
 	ErrCodeServerBusy         = 1003
 	ErrCodeUserNotExist       = 1004
 	ErrCodeUserNameOrPwdWrong = 1005
+	ErrCodeCaptionSensitive   = 1006
+	ErrCodeContentSensitive   = 1007
+	ErrCodeNotLogin			  = 1008
 )
 
 // 程序内部的错误交流模块
@@ -34,7 +37,12 @@ func GetMessage(code int) (message string) {
 		message = "不户名不存在"
 	case ErrCodeUserNameOrPwdWrong:
 		message = "用户名或密码错误"
-
+	case ErrCodeCaptionSensitive:
+		message = "标题不能含有敏感词"
+	case ErrCodeContentSensitive:
+		message = "内容中含有敏感词!请修改后再提交"
+	case ErrCodeNotLogin:
+		message = "未登陆，请重新登录"
 	default:
 		message = "未知错误"
 		break
