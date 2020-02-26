@@ -57,3 +57,14 @@ func TestGetQuestionList(t *testing.T) {
 	}
 
 }
+
+func TestGetQuestion(t *testing.T) {
+	var questionId int64 = 290520334266793985
+	question,err:= GetQuestion(questionId)
+	if err != nil {
+		t.Errorf("%#v",err)
+		return
+	}
+
+	t.Logf("result is %#v",question)
+}

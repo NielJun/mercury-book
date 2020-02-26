@@ -35,7 +35,7 @@
         },
         methods: {
             async submit() {
-                let res = await this.$http.post("/api/ask/submit", this.form);
+                let res = await this.$http.post("/api/question/submit", this.form);
                 console.log(res);
                 if (res.status != 200) {
                     this.$Message.error("提问失败，网络错误");

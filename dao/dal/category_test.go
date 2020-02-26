@@ -19,13 +19,13 @@ func init() {
 
 func TestGetCategoryList(t *testing.T) {
 
-	categoryList,err :=GetCategoryList()
+	categoryList, err := GetCategoryList()
 	if err != nil {
-		t.Errorf("%#v",err)
+		t.Errorf("%#v", err)
 		return
 	}
 
-	for _,value := range categoryList{
+	for _, value := range categoryList {
 		t.Logf("CategoryName: %s  \n", value.CategoryName)
 	}
 }
@@ -55,7 +55,7 @@ func TestInsertCategory(t *testing.T) {
 		CategoryId:   4,
 	}
 
-	for _,value  := range categoryList{
+	for _, value := range categoryList {
 		err := InsertCategory(value)
 
 		if err != nil {
@@ -63,6 +63,18 @@ func TestInsertCategory(t *testing.T) {
 		}
 	}
 
+}
 
+func TestGetCategoryMap(t *testing.T) {
+	 categoryIds  := []int64{1,2,3,4}
 
+	categoryMap,err:= GetCategoryMap(categoryIds)
+	if err != nil {
+		t.Errorf("%#v",err)
+		return
+	}
+	for _, value := range categoryMap {
+
+		t.Logf("categoryId is %v , categoryName is %v",value.CategoryId,value.CategoryName)
+	}
 }

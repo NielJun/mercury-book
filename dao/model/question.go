@@ -16,8 +16,16 @@ type Question struct {
 	AuthorIdStr   string    `json:"author_id"`
 }
 
-// 回应给客户端的数据结构
+// 回应给客户端的列表数据结构单元
+// 通过查询和聚合作者名字返回给客户端
 type ResponseQuestion struct {
 	Question
+	AuthorName string `json:"author_name"`
+}
+
+// 回应给客户端问题细节
+type QuestionDetail struct {
+	Question
+	CategoryName string `json:"name" db:"category_name"`
 	AuthorName string `json:"author_name"`
 }

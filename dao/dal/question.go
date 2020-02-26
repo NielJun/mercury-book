@@ -35,9 +35,27 @@ func GetQuestionList(categoryId int64) (questionList []*model.Question, err erro
 
 	sqlstr := "select question_id,caption,content,author_id,category_id,create_time from question where category_id = ?"
 	//select用来做分组查询【查询一个链表】
-	 err = dao.DB.Select(&questionList,sqlstr,categoryId)
+	err = dao.DB.Select(&questionList, sqlstr, categoryId)
 	if err != nil {
 		return
 	}
+	return
+}
+
+// 通过questionid查询Question的详情
+func GetQuestion(questionId int64) (question *model.Question, err error) {
+	question = &model.Question{}
+	sqlstr := `select 
+							question_id, caption, content, author_id, category_id, create_time
+						from 
+							question
+						where question_id=?`
+
+	err = dao.DB.Get(question, sqlstr, questionId)
+	if err != nil {
+		//.Error("get question  failed, err:%v", err)
+		return
+	}
+
 	return
 }

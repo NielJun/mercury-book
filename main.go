@@ -5,7 +5,8 @@ import (
 	"github.com/DeanThompson/ginpprof"
 	"github.com/NielJun/go-logger"
 	"github.com/daniel/AnserBlock/controller/account"
-	"github.com/daniel/AnserBlock/controller/ask"
+	"github.com/daniel/AnserBlock/controller/answer"
+	"github.com/daniel/AnserBlock/controller/question"
 	"github.com/daniel/AnserBlock/controller/category"
 	"github.com/daniel/AnserBlock/dao"
 	"github.com/daniel/AnserBlock/filter"
@@ -64,8 +65,10 @@ func RegisterAPI(router *gin.Engine) {
 	router.POST("/api/user/login", account.LoginHandle)
 	router.GET("/api/category/list", category.CategoryListHandle)
 	// 问题发布页面  第一个参数是中间件的操作
-	router.POST("/api/ask/submit",middleware.AuthMiddleware, ask.QuestionSubmitHandle)
-	router.GET("/api/question/list", category.GetQuestionListHandle)
+	router.POST("/api/question/submit",middleware.AuthMiddleware, question.QuestionSubmitHandle)
+	router.GET("/api/question/list", question.GetQuestionListHandle)
+	router.GET("/api/question/detail", question.QuestionDetailHandle)
+	router.GET("/api/answer/list", answer.AnswerListHandle)
 }
 
 func main() {
