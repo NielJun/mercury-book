@@ -15,3 +15,9 @@ type Question struct {
 	QuestionIdStr string    `json:"question_id"`
 	AuthorIdStr   string    `json:"author_id"`
 }
+
+// 回应给客户端的数据结构
+type ResponseQuestion struct {
+	Question
+	AuthorName string `json:"author_name"`
+}

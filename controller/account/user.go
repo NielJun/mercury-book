@@ -46,7 +46,7 @@ func LoginHandle(c *gin.Context) {
 	// dal操作数据库
 	err = dal.Login(&userInfo)
 	if err == utils.ErrUserNotExisted {
-		utils.ResponseError(c, utils.ErrCodeUserExit)
+		utils.ResponseError(c, utils.ErrCodeUserNotExist)
 		return
 	} else if err == utils.ErrUserPwdWrong {
 		utils.ResponseError(c, utils.ErrCodeUserNameOrPwdWrong)

@@ -19,8 +19,6 @@ func init() {
 
 }
 
-
-
 func TestCreateQuestion(t *testing.T) {
 	id, _ := generateid.GetId()
 
@@ -42,6 +40,20 @@ func TestCreateQuestion(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 		return
+	}
+
+}
+
+func TestGetQuestionList(t *testing.T) {
+
+	questionList, err := GetQuestionList(1)
+
+	if err != nil {
+		t.Error(err)
+		return
+	}
+	for _, q := range questionList {
+		t.Logf("%#v", *q)
 	}
 
 }

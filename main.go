@@ -65,6 +65,7 @@ func RegisterAPI(router *gin.Engine) {
 	router.GET("/api/category/list", category.CategoryListHandle)
 	// 问题发布页面  第一个参数是中间件的操作
 	router.POST("/api/ask/submit",middleware.AuthMiddleware, ask.QuestionSubmitHandle)
+	router.GET("/api/question/list", category.GetQuestionListHandle)
 }
 
 func main() {

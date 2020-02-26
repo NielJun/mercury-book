@@ -1,22 +1,11 @@
 <template>
   <div class="home">
-    <Tabs value="1">
-      <TabPane label="技术" name="1">
-        <Card v-for="item of list1" :key="item.id" :title="item.title">
+    <Tabs value="1" @on-click="changeTab">
+      <TabPane  v-for="category of category_list" :key="category.id" :label="category.name" :id="category.id">
+        <Card v-for="item of current_list" :key="item.question_id" :title="item.caption">
           <p>{{item.content}}</p>
-          <p>提问时间：{{item.createAt}} 提问者：{{item.createByName}}</p>
-        </Card>
-      </TabPane>
-      <TabPane label="生活" name="2">
-        <Card v-for="item of list2" :key="item.id" :title="item.title">
-          <p>{{item.content}}</p>
-          <p>提问时间：{{item.createAt}} 提问者：{{item.createByName}}</p>
-        </Card>
-      </TabPane>
-      <TabPane label="八卦" name="3">
-        <Card v-for="item of list3" :key="item.id" :title="item.title">
-          <p>{{item.content}}</p>
-          <p>提问时间：{{item.createAt}} 提问者：{{item.createByName}}</p>
+          <p></p>
+          <p>提问时间：{{item.create_time}} 提问者：{{item.author_name}}</p>
         </Card>
       </TabPane>
     </Tabs>
@@ -28,34 +17,65 @@ export default {
   name: "home",
   data() {
     return {
-      list1: [
-        {
-          id: 1,
-          title: "aaaa",
-          content: "bbbbbbbbbb",
-          createAt: "2018-10-10",
-          createByName: "rrrrr"
-        }
-      ],
-      list2: [
-        {
-          id: 1,
-          title: "aaaa",
-          content: "bbbbbbbbbb",
-          craeteAt: "2018-10-10",
-          craeteByName: "rrrrr"
-        }
-      ],
-      list3: [
-        {
-          id: 1,
-          title: "aaaa",
-          content: "bbbbbbbbbb",
-          craeteAt: "2018-10-10",
-          craeteByName: "rrrrr"
-        }
-      ]
+      current_list: [],
+      category_list:[]
     };
+  },
+   created() {
+    this.fetchCategoryList()
+  },
+  methods: {
+    fetchCategoryList() {
+        let vm = this
+        this.$http.get("/api/category/list").then(function(response){
+              console.log(response);
+              if (response.status != 200) {
+                  vm.$Message.error("服务繁忙，请稍后重试");
+                  return;
+              }
+              if (response.data.code === 0) {
+                  console.log(response.data.data);
+                  vm.category_list = response.data.data
+                  if (vm.category_list.length > 0) {
+                      vm.fetchQuestionList(vm.category_list[0].id)
+                  }
+              } else {
+                  vm.$Message.error(response.data.message);
+              }
+            },
+            function(response) {
+                vm.$Message.error("服务繁忙，请稍后重试");
+                console.log(response);
+            }
+        )
+    },
+
+    fetchQuestionList(id) {
+      console.info(id);
+      let vm = this
+      this.$http.get("/api/question/list?category_id="+id).then(function(response){
+              console.log(response);
+              if (response.status != 200) {
+                  vm.$Message.error("服务繁忙，请稍后重试");
+                  return;
+              }
+              if (response.data.code === 0) {
+                  console.log(response.data.data);
+                  vm.current_list = response.data.data
+              } else {
+                  vm.$Message.error(response.data.message);
+              }
+            }, function(response) {
+                vm.$Message.error("服务繁忙，请稍后重试");
+                console.log(response);
+            }
+        )
+    },
+
+    changeTab:function (key) {
+      const index = parseInt(key);
+      this.fetchQuestionList(this.category_list[index].id)
+    }
   }
 };
 </script>

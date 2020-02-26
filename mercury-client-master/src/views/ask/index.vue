@@ -32,10 +32,10 @@
             };
         }, created() {
             this.fetchCategoryList()
-        }, methods: {
+        },
+        methods: {
             async submit() {
-                let res = await this.$http.post("api/ask/submit", this.form);
-                console.log(res.statusCode);
+                let res = await this.$http.post("/api/ask/submit", this.form);
                 console.log(res);
                 if (res.status != 200) {
                     this.$Message.error("提问失败，网络错误");
@@ -43,18 +43,14 @@
                 }
                 if (res.data.code === 0) {
                     this.$Message.success("提问成功");
-
-                    this.$router.push("/")
+                    this.$router.push("/");
                 } else {
+                    // 这个1008错误码最好是使用常量定义
+                    this.$Message.error(res.data.message);
                     if (res.data.code === 1008) {
-                        // 1008表示服务端检测的用户未登陆
-                        this.$Message.message("请先登录");
                         this.$router.push("/login")
-                    } else {
-                        this.$Message.error(res.data.message);
                     }
                 }
-
             },
             fetchCategoryList() {
                 this.category_list = [{id: 1, name: "技术"}];

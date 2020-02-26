@@ -2,35 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52f23a8-7a58-4897-aebe-1354e6228025" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/dal/question_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/app.ba394abc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.25f0f7a1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.25f0f7a1.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.605570a6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.605570a6.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.6b862cb6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.6b862cb6.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.6d0cf288.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.6d0cf288.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.8e899449.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.8e899449.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.df15e489.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.df15e489.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.f7b364de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.f7b364de.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app.2c1908fc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app.2c1908fc.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app.8d6cd09c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app.8d6cd09c.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app.9a1e833d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app.9a1e833d.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app.fafc456a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app.fafc456a.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnserBlock" beforeDir="false" afterPath="$PROJECT_DIR$/AnserBlock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/utils/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/utils/error.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/account/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/account/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/ask/ask.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ask/ask.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/category/category.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/category/category.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/dal/question.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/question.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/dal/question_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/question_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/dal/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/model/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/model/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/dal/user_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/user_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/model/question.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/model/question.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mercury-client-master/src/views/ask/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mercury-client-master/src/views/ask/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercury-client-master/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mercury-client-master/src/views/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/account/account.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/account/account.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/account/midlleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/account/midlleware.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mercury-client-master/src/views/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mercury-client-master/src/views/home/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,6 +67,9 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
@@ -85,21 +80,24 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/mercury-client-master/src/views/home" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/common/utils" />
+      <recent name="$PROJECT_DIR$/middleware/account" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/flitter-world" />
       <recent name="$PROJECT_DIR$/session" />
       <recent name="$PROJECT_DIR$/session/redis" />
       <recent name="$PROJECT_DIR$/session/memory" />
       <recent name="$PROJECT_DIR$/session/memory/memory_mgr" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/common/utils" />
-      <recent name="$PROJECT_DIR$/middleware/account" />
-      <recent name="$PROJECT_DIR$/views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -114,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/daniel/AnserBlock">
+  <component name="RunManager" selected="Go Test.TestGetQuestionList in github.com/daniel/AnserBlock/dao/dal">
     <configuration name="Unnamed" type="GoAppEngineRunConfiguration" factoryName="Go App Engine" nameIsGenerated="true">
       <module name="AnserBlock" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -140,7 +138,7 @@
       <pattern value="^TestCreateQuestion$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestInsertCategory in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetQuestionList in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="AnserBlock" />
       <working_directory value="$PROJECT_DIR$/dao/dal" />
       <framework value="gotest" />
@@ -148,10 +146,10 @@
       <package value="github.com/daniel/AnserBlock/dao/dal" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestInsertCategory$" />
+      <pattern value="^TestGetQuestionList$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestLogin in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetUserInfoList in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="AnserBlock" />
       <working_directory value="$PROJECT_DIR$/dao/dal" />
       <framework value="gotest" />
@@ -159,35 +157,35 @@
       <package value="github.com/daniel/AnserBlock/dao/dal" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestLogin$" />
+      <pattern value="^TestGetUserInfoList$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestReplace in github.com/daniel/AnserBlock/filter" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRegister in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="AnserBlock" />
-      <working_directory value="$PROJECT_DIR$/filter" />
+      <working_directory value="$PROJECT_DIR$/dao/dal" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/daniel/AnserBlock/filter" />
+      <package value="github.com/daniel/AnserBlock/dao/dal" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestReplace$" />
+      <pattern value="^TestRegister$" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go App Engine.Unnamed" />
       <item itemvalue="Go Build.go build github.com/daniel/AnserBlock" />
-      <item itemvalue="Go Test.TestLogin in github.com/daniel/AnserBlock/dao/dal" />
-      <item itemvalue="Go Test.TestReplace in github.com/daniel/AnserBlock/filter" />
-      <item itemvalue="Go Test.TestInsertCategory in github.com/daniel/AnserBlock/dao/dal" />
       <item itemvalue="Go Test.TestCreateQuestion in github.com/daniel/AnserBlock/dao/dal" />
+      <item itemvalue="Go Test.TestGetUserInfoList in github.com/daniel/AnserBlock/dao/dal" />
+      <item itemvalue="Go Test.TestRegister in github.com/daniel/AnserBlock/dao/dal" />
+      <item itemvalue="Go Test.TestGetQuestionList in github.com/daniel/AnserBlock/dao/dal" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestGetQuestionList in github.com/daniel/AnserBlock/dao/dal" />
+        <item itemvalue="Go Test.TestGetUserInfoList in github.com/daniel/AnserBlock/dao/dal" />
+        <item itemvalue="Go Test.TestRegister in github.com/daniel/AnserBlock/dao/dal" />
         <item itemvalue="Go Build.go build github.com/daniel/AnserBlock" />
         <item itemvalue="Go Test.TestCreateQuestion in github.com/daniel/AnserBlock/dao/dal" />
-        <item itemvalue="Go Test.TestInsertCategory in github.com/daniel/AnserBlock/dao/dal" />
-        <item itemvalue="Go Test.TestReplace in github.com/daniel/AnserBlock/filter" />
-        <item itemvalue="Go Test.TestLogin in github.com/daniel/AnserBlock/dao/dal" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +197,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -228,14 +228,9 @@
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/controller/account/user.go</url>
-          <line>25</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/controller/account/user.go</url>
-          <line>17</line>
-          <option name="timeStamp" value="38" />
+          <url>file://$PROJECT_DIR$/dao/dal/user_test.go</url>
+          <line>43</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
