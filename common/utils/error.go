@@ -12,7 +12,8 @@ const (
 	ErrCodeUserNameOrPwdWrong = 1005
 	ErrCodeCaptionSensitive   = 1006
 	ErrCodeContentSensitive   = 1007
-	ErrCodeNotLogin			  = 1008
+	ErrCodeNotLogin           = 1008
+	ErrCodeTooShort           = 1009 // 字符串合长度
 )
 
 // 程序内部的错误交流模块
@@ -43,6 +44,8 @@ func GetMessage(code int) (message string) {
 		message = "内容中含有敏感词!请修改后再提交"
 	case ErrCodeNotLogin:
 		message = "未登陆，请重新登录"
+	case ErrCodeTooShort:
+		message = "内容长度不达标 请输入不少于10个字符的内容"
 	default:
 		message = "未知错误"
 		break

@@ -2,84 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52f23a8-7a58-4897-aebe-1354e6228025" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/utils/query.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/answer/answer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/dal/answer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/dal/answer_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/model/answer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/comment/comment.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/dal/comment.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/dal/comment_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/model/comment.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnserBlock" beforeDir="false" afterPath="$PROJECT_DIR$/AnserBlock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/ask/ask.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/question/question.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/category/category.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/category/category.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/dal/category.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/category.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/dal/category_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/category_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/dal/question.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/question.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/dal/question_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/question_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/model/question.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/model/question.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/utils/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/utils/error.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mercury-client-master/src/views/ask/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mercury-client-master/src/views/ask/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mercury-client/src/views/ask/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mercury-client/src/views/ask/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.093b6a44.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.093b6a44.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.0b5e8300.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.0b5e8300.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.0b690e3b.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.0b690e3b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.103ca619.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.103ca619.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.1be38431.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.1be38431.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.1c0f5cf0.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.1c0f5cf0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.25f0f7a1.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.25f0f7a1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.2c1908fc.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.2c1908fc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.342ef397.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.342ef397.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.37795576.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.37795576.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.39477da7.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.39477da7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.39891639.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.39891639.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.3ea2713a.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.3ea2713a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.49b3e40a.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.49b3e40a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.4f2a1ca4.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.4f2a1ca4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.50fc05d6.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.50fc05d6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.54e057d1.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.54e057d1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.54e3ae2e.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.54e3ae2e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.580c9dc1.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.580c9dc1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.5adf2326.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.5adf2326.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.5e1b85fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.5e1b85fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.5f0d9933.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.5f0d9933.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.605570a6.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.605570a6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.640b5c93.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.640b5c93.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.68049314.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.68049314.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.6b862cb6.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.6b862cb6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.6d0cf288.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.6d0cf288.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.70463435.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.70463435.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.72bdf1c5.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.72bdf1c5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.819fada3.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.819fada3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.825652b9.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.825652b9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.83e5dc2c.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.83e5dc2c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.861c7cff.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.861c7cff.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.8d6cd09c.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.8d6cd09c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.8e899449.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.8e899449.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.97753555.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.97753555.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.9a1e833d.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.9a1e833d.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.9f68685f.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.9f68685f.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.a50a2fea.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.a50a2fea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.a8edd002.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.a8edd002.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.ac494e59.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.ac494e59.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.ada1bb10.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.ada1bb10.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.ae55add1.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.ae55add1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.b1bf8cf4.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.b1bf8cf4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.b6698332.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.b6698332.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.b7bd0971.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.b7bd0971.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.cc3d2236.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.cc3d2236.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.ce4a93fb.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.ce4a93fb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.cf3fd1eb.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.cf3fd1eb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.d36c7e68.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.d36c7e68.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.d78cbc94.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.d78cbc94.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.d9b70534.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.d9b70534.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.dc767d42.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.dc767d42.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.dd4531fb.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.dd4531fb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.de83845f.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.de83845f.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.df15e489.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.df15e489.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.f4785bb8.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.f4785bb8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.f6edf5f7.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.f6edf5f7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.f7b364de.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.f7b364de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.fafc456a.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.fafc456a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.fbdf311b.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.fbdf311b.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +51,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -138,7 +70,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -168,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/daniel/AnserBlock">
+  <component name="RunManager" selected="Go Test.TestCreatePostReplyComment in github.com/daniel/AnserBlock/dao/dal">
     <configuration name="Unnamed" type="GoAppEngineRunConfiguration" factoryName="Go App Engine" nameIsGenerated="true">
       <module name="AnserBlock" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -183,7 +115,7 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetCategoryMap in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCreatePostComment in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="AnserBlock" />
       <working_directory value="$PROJECT_DIR$/dao/dal" />
       <framework value="gotest" />
@@ -191,7 +123,29 @@
       <package value="github.com/daniel/AnserBlock/dao/dal" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestGetCategoryMap$" />
+      <pattern value="^TestCreatePostComment$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCreatePostReplyComment in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AnserBlock" />
+      <working_directory value="$PROJECT_DIR$/dao/dal" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/daniel/AnserBlock/dao/dal" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestCreatePostReplyComment$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGetAuthorId in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AnserBlock" />
+      <working_directory value="$PROJECT_DIR$/dao/dal" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/daniel/AnserBlock/dao/dal" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestGetAuthorId$" />
       <method v="2" />
     </configuration>
     <configuration name="TestGetQuestion in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -205,43 +159,21 @@
       <pattern value="^TestGetQuestion$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetQuestionList in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="AnserBlock" />
-      <working_directory value="$PROJECT_DIR$/dao/dal" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/daniel/AnserBlock/dao/dal" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestGetQuestionList$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestGetUserInfoList in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="AnserBlock" />
-      <working_directory value="$PROJECT_DIR$/dao/dal" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/daniel/AnserBlock/dao/dal" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestGetUserInfoList$" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Go App Engine.Unnamed" />
       <item itemvalue="Go Build.go build github.com/daniel/AnserBlock" />
-      <item itemvalue="Go Test.TestGetUserInfoList in github.com/daniel/AnserBlock/dao/dal" />
-      <item itemvalue="Go Test.TestGetQuestionList in github.com/daniel/AnserBlock/dao/dal" />
-      <item itemvalue="Go Test.TestGetCategoryMap in github.com/daniel/AnserBlock/dao/dal" />
       <item itemvalue="Go Test.TestGetQuestion in github.com/daniel/AnserBlock/dao/dal" />
+      <item itemvalue="Go Test.TestCreatePostComment in github.com/daniel/AnserBlock/dao/dal" />
+      <item itemvalue="Go Test.TestGetAuthorId in github.com/daniel/AnserBlock/dao/dal" />
+      <item itemvalue="Go Test.TestCreatePostReplyComment in github.com/daniel/AnserBlock/dao/dal" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestCreatePostReplyComment in github.com/daniel/AnserBlock/dao/dal" />
+        <item itemvalue="Go Test.TestGetAuthorId in github.com/daniel/AnserBlock/dao/dal" />
+        <item itemvalue="Go Test.TestCreatePostComment in github.com/daniel/AnserBlock/dao/dal" />
         <item itemvalue="Go Build.go build github.com/daniel/AnserBlock" />
         <item itemvalue="Go Test.TestGetQuestion in github.com/daniel/AnserBlock/dao/dal" />
-        <item itemvalue="Go Test.TestGetCategoryMap in github.com/daniel/AnserBlock/dao/dal" />
-        <item itemvalue="Go Test.TestGetQuestionList in github.com/daniel/AnserBlock/dao/dal" />
-        <item itemvalue="Go Test.TestGetUserInfoList in github.com/daniel/AnserBlock/dao/dal" />
       </list>
     </recent_temporary>
   </component>
@@ -261,9 +193,12 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-    <proxy>goproxy.cn</proxy>
+    <proxy>http://mirrors.aliyun.com/goproxy/</proxy>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
