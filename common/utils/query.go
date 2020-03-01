@@ -12,7 +12,7 @@ func GetQueryInt64(c *gin.Context, key string) (value int64, err error) {
 
 	str, ok := c.GetQuery(key)
 	if !ok {
-		logger.Error("question id is not availd,not found question_id")
+		logger.Error("query id is not availd,not found %s",key)
 		err = fmt.Errorf(" invalid params,not found key : %s", key)
 		return
 	}

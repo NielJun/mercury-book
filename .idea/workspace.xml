@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52f23a8-7a58-4897-aebe-1354e6228025" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/comment/comment.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/dal/comment.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/dal/comment_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/model/comment.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/model/like.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnserBlock" beforeDir="false" afterPath="$PROJECT_DIR$/AnserBlock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/utils/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/utils/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/utils/query.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/utils/query.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/comment/comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/comment/comment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/dal/answer.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/answer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/dal/comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/comment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/dal/comment_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/comment_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/dal/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dal/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mercury-client/src/views/ask/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mercury-client/src/views/ask/index.vue" afterDir="false" />
     </list>
@@ -100,7 +102,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestCreatePostReplyComment in github.com/daniel/AnserBlock/dao/dal">
+  <component name="RunManager" selected="Go Build.go build github.com/daniel/AnserBlock">
     <configuration name="Unnamed" type="GoAppEngineRunConfiguration" factoryName="Go App Engine" nameIsGenerated="true">
       <module name="AnserBlock" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -111,19 +113,9 @@
       <module name="AnserBlock" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <package value="github.com/daniel/AnserBlock" />
       <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestCreatePostComment in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="AnserBlock" />
-      <working_directory value="$PROJECT_DIR$/dao/dal" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/daniel/AnserBlock/dao/dal" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestCreatePostComment$" />
       <method v="2" />
     </configuration>
     <configuration name="TestCreatePostReplyComment in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -148,7 +140,7 @@
       <pattern value="^TestGetAuthorId$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetQuestion in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetCommentList in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="AnserBlock" />
       <working_directory value="$PROJECT_DIR$/dao/dal" />
       <framework value="gotest" />
@@ -156,24 +148,35 @@
       <package value="github.com/daniel/AnserBlock/dao/dal" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestGetQuestion$" />
+      <pattern value="^TestGetCommentList$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGetRePlyCommentList in github.com/daniel/AnserBlock/dao/dal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AnserBlock" />
+      <working_directory value="$PROJECT_DIR$/dao/dal" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/daniel/AnserBlock/dao/dal" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestGetRePlyCommentList$" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go App Engine.Unnamed" />
       <item itemvalue="Go Build.go build github.com/daniel/AnserBlock" />
-      <item itemvalue="Go Test.TestGetQuestion in github.com/daniel/AnserBlock/dao/dal" />
-      <item itemvalue="Go Test.TestCreatePostComment in github.com/daniel/AnserBlock/dao/dal" />
       <item itemvalue="Go Test.TestGetAuthorId in github.com/daniel/AnserBlock/dao/dal" />
       <item itemvalue="Go Test.TestCreatePostReplyComment in github.com/daniel/AnserBlock/dao/dal" />
+      <item itemvalue="Go Test.TestGetCommentList in github.com/daniel/AnserBlock/dao/dal" />
+      <item itemvalue="Go Test.TestGetRePlyCommentList in github.com/daniel/AnserBlock/dao/dal" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/daniel/AnserBlock" />
+        <item itemvalue="Go Test.TestGetRePlyCommentList in github.com/daniel/AnserBlock/dao/dal" />
+        <item itemvalue="Go Test.TestGetCommentList in github.com/daniel/AnserBlock/dao/dal" />
         <item itemvalue="Go Test.TestCreatePostReplyComment in github.com/daniel/AnserBlock/dao/dal" />
         <item itemvalue="Go Test.TestGetAuthorId in github.com/daniel/AnserBlock/dao/dal" />
-        <item itemvalue="Go Test.TestCreatePostComment in github.com/daniel/AnserBlock/dao/dal" />
-        <item itemvalue="Go Build.go build github.com/daniel/AnserBlock" />
-        <item itemvalue="Go Test.TestGetQuestion in github.com/daniel/AnserBlock/dao/dal" />
       </list>
     </recent_temporary>
   </component>
@@ -227,6 +230,11 @@
           <url>file://$PROJECT_DIR$/controller/question/question.go</url>
           <line>165</line>
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/controller/comment/comment.go</url>
+          <line>299</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

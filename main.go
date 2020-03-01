@@ -72,11 +72,16 @@ func RegisterAPI(router *gin.Engine) {
 	router.GET("/api/answer/list", answer.AnswerListHandle)
 
 	// 评论相关 作为一个组
-	commentGroup := router.Group("/api/comment/")//, middleware.AuthMiddleware
+	commentGroup := router.Group("/api/comment")//, middleware.AuthMiddleware
 	// 评论
 	commentGroup.POST("/post_comment", comment.PostCommentHandle)
 	// 回复评论
 	commentGroup.POST("/post_comment_reply", comment.PostCommentReplyHandle)
+	commentGroup.GET("/list", comment.CommentListHandle)
+	commentGroup.GET("/reply_list", comment.CommentReplyListHandle)
+
+	//点赞功能
+	commentGroup.POST("/like",comment.LikeHandle)
 }
 
 func main() {

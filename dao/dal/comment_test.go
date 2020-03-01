@@ -37,13 +37,13 @@ func TestCreatePostComment(t *testing.T) {
 func TestGetAuthorId(t *testing.T) {
 	var commentId int64 = 12138
 
-	  authorId,err := GetAuthorId(commentId)
+	authorId, err := GetAuthorId(commentId)
 	if err != nil {
-		t.Logf("作者的ID 是 : %v ,err： %#v",authorId,err)
+		t.Logf("作者的ID 是 : %v ,err： %#v", authorId, err)
 
 	}
 
-	t.Logf("作者的ID 是 : %v ",authorId)
+	t.Logf("作者的ID 是 : %v ", authorId)
 
 }
 
@@ -57,4 +57,29 @@ func TestCreatePostReplyComment(t *testing.T) {
 		t.Errorf("create pos comment faild")
 		return
 	}
+}
+
+func TestGetCommentList(t *testing.T) {
+
+	var answerId int64 = 290520334266793985
+
+	commentList, count, err := GetCommentList(answerId, 0, 10)
+	if err != nil {
+		t.Error(err)
+		return
+	}
+
+	t.Logf("%#v   , %v", commentList, count)
+}
+
+func TestGetRePlyCommentList(t *testing.T) {
+	var answerId int64 = 290866239608193025
+
+	commentList, count, err := GetRePlyCommentList(answerId, 0, 10)
+	if err != nil {
+		t.Error(err)
+		return
+	}
+
+	t.Logf("%#v   , %v", commentList, count)
 }

@@ -97,6 +97,7 @@ func GetUserInfoList(userIdList [] int64) (userInfoList []*model.UserInfo, err e
 	if err != nil {
 		logger.Error("sqlx in faild ,sqlstr :%v ,userIdList : %#v, err: %#v", sqlstr, userIdList, err)
 		return
+
 	}
 
 	//select用来做分组查询【查询一个链表】

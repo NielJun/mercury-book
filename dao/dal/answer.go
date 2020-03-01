@@ -73,3 +73,15 @@ func GetTotalAnswerCount(questionId int64) (totalCount int32, err error) {
 	return
 
 }
+
+// 记录点赞数亩
+func UpdateAnswerCountCount(questionId int64) (err error) {
+
+	sqlStr := "update answer set like_count = like_count+1 where answer_id = ?"
+	_, err = dao.DB.Exec(sqlStr, questionId)
+	if err != nil {
+		logger.Error("update answer voteup_count faild, err: %#v", err)
+		return
+	}
+	return
+}
