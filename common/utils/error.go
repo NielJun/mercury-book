@@ -14,6 +14,7 @@ const (
 	ErrCodeContentSensitive   = 1007
 	ErrCodeNotLogin           = 1008
 	ErrCodeTooShort           = 1009 // 字符串合长度
+	ErrCodeRecordExisted      = 1010 //已经存在
 )
 
 // 程序内部的错误交流模块
@@ -21,6 +22,7 @@ var (
 	ErrUserAlreadyExisted = errors.New("user not existed")
 	ErrUserNotExisted     = errors.New("user not existed")
 	ErrUserPwdWrong       = errors.New("user passwd wrong")
+	ErrRecordExisted      = errors.New("record have been set")
 )
 
 // 根据错误码获取对应的消息
@@ -46,6 +48,8 @@ func GetMessage(code int) (message string) {
 		message = "未登陆，请重新登录"
 	case ErrCodeTooShort:
 		message = "内容长度不达标 请输入不少于10个字符的内容"
+	case ErrCodeRecordExisted:
+		message = "记录已存在"
 	default:
 		message = "未知错误"
 		break

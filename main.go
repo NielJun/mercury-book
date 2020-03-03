@@ -8,6 +8,7 @@ import (
 	"github.com/daniel/AnserBlock/controller/answer"
 	"github.com/daniel/AnserBlock/controller/category"
 	"github.com/daniel/AnserBlock/controller/comment"
+	"github.com/daniel/AnserBlock/controller/favorite"
 	"github.com/daniel/AnserBlock/controller/question"
 	"github.com/daniel/AnserBlock/dao"
 	"github.com/daniel/AnserBlock/filter"
@@ -72,7 +73,7 @@ func RegisterAPI(router *gin.Engine) {
 	router.GET("/api/answer/list", answer.AnswerListHandle)
 
 	// 评论相关 作为一个组
-	commentGroup := router.Group("/api/comment")//, middleware.AuthMiddleware
+	commentGroup := router.Group("/api/comment") //, middleware.AuthMiddleware
 	// 评论
 	commentGroup.POST("/post_comment", comment.PostCommentHandle)
 	// 回复评论
@@ -81,7 +82,15 @@ func RegisterAPI(router *gin.Engine) {
 	commentGroup.GET("/reply_list", comment.CommentReplyListHandle)
 
 	//点赞功能
-	commentGroup.POST("/like",comment.LikeHandle)
+	commentGroup.POST("/like", comment.LikeHandle)
+
+	// 收藏功能
+	favoriteCroup := router.Group("/api/favorite")
+	favoriteCroup.POST("/add_dir", favorite.AddDirHandle)          // 添加收藏夹
+	favoriteCroup.POST("/add", favorite.AddFavoriteHandle)         //添加收藏
+	favoriteCroup.GET("/dir_list", favorite.FavoriteDirListHandle) //获取收藏夹列表
+	favoriteCroup.GET("/list", favorite.FavoriteListHandle)        //获取某个收藏夹下所有的收藏的列表
+
 }
 
 func main() {

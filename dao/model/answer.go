@@ -7,7 +7,7 @@ type Answer struct {
 	AnswerId     int64     `json:"answer_id" db:"answer_id"`
 	Content      string    `json:"content" db:"content"`
 	CommentCount int32     `json:"comment_count" db:"comment_count"`
-	VoteupCount  int32     `json:"voteup_count" db:"voteup_count"`
+	VoteupCount  int32     `json:"like_count" db:"like_count"`
 	AuthorId     int64     `json:"author_id" db:"author_id"`
 	Status       int32     `json:"status" db:"status"`
 	CanComment   int32     `json:"can_comment" db:"can_comment"`

@@ -39,7 +39,7 @@ func GetAnswerIdList(questionId int64, offset, limit int64) (answerIdList []int6
 func GetAnwerList(answerIds []int64) (answerList [] *model.Answer, err error) {
 
 	// 对sqlIn语句进行处理
-	sqlStr := "select answer_id,content,comment_count,voteup_count,author_id,status,can_comment,create_time,update_time from answer where answer_id in (?)"
+	sqlStr := "select answer_id,content,comment_count,like_count,author_id,status,can_comment,create_time,update_time from answer where answer_id in (?)"
 	var interfaceArr []  interface{}
 	for _, c := range answerIds {
 		interfaceArr = append(interfaceArr, c)
